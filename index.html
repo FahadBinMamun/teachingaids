@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>OKGS টিচার্স টুলস পোর্টাল</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts for Bengali and English -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .heading-col h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+        .tool-item {
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+        }
+        .tool-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #007bff;
+        }
+        .tool-item .icon-container {
+            background-color: #007bff;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+        .tool-item:hover .icon-container {
+            background-color: #0056b3;
+        }
+        .section-title-border {
+            width: 100px;
+            height: 4px;
+            background-color: #007bff;
+            margin: 10px auto 0 auto;
+        }
+        /* Preloader Styles */
+        #preloader {
+            transition: opacity 0.7s ease-out, visibility 0.7s ease-out;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="fixed top-0 left-0 w-screen h-screen bg-white flex justify-center items-center z-50">
+        <div class="text-center">
+            <img src="https://i.postimg.cc/PJz67sFQ/school-logo.png" alt="লোড হচ্ছে..." class="h-24 animate-pulse mx-auto">
+            <p class="mt-4 text-lg text-gray-700">টুলস লোড হচ্ছে...</p>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://i.postimg.cc/PJz67sFQ/school-logo.png" alt="স্কুলের লোগো" class="h-16 mr-4">
+                <div>
+                    <h1 class="text-2xl font-bold text-blue-800">ওমর কিন্ডারগার্টেন স্কুল ও ওমর গার্ডেন একাডেমী</h1>
+                    <p class="text-gray-600">টিচার্স টুলস পোর্টাল</p>
+                </div>
+            </div>
+            <div class="text-right">
+                 <p class="text-gray-700"><i class="fa fa-envelope mr-2"></i>computerlabokgs1429@gmail.com</p>
+                 <p class="text-gray-700"><i class="fa fa-phone mr-2"></i>01_________</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Section: Basic Tools -->
+        <section class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800">বেসিক টুলস</h2>
+                <p class="text-lg text-gray-500 mt-2">দৈনন্দিন কাজের জন্য প্রয়োজনীয় টুলস</p>
+                <div class="section-title-border"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- YouTube Downloader -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-youtube text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">YouTube Downloader</h3>
+                        <p class="text-gray-600 mb-4">ইউটিউব থেকে যেকোনো শিক্ষামূলক ভিডিও ডাউনলোড করুন।</p>
+                    </div>
+                    <a href="https://www.y2mate.is/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+
+                <!-- Facebook Downloader -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fab fa-facebook-f text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Facebook Downloader</h3>
+                        <p class="text-gray-600 mb-4">ফেসবুক থেকে প্রয়োজনীয় ভিডিও কন্টেন্ট সেভ করুন।</p>
+                    </div>
+                    <a href="https://fdown.net/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+
+                <!-- Copyright-Free Images -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-image text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Copyright-Free Images</h3>
+                        <p class="text-gray-600 mb-4">প্রেজেন্টেশনের জন্য উচ্চমানের ছবি খুঁজুন।</p>
+                    </div>
+                    <a href="https://www.pexels.com/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+
+                <!-- PDF Editor -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-file-pdf text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">PDF Editor</h3>
+                        <p class="text-gray-600 mb-4">পিডিএফ ফাইল কনভার্ট, মার্জ বা এডিট করার জন্য।</p>
+                    </div>
+                    <a href="https://www.ilovepdf.com/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: More Tools -->
+        <section class="mb-16">
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800">অন্যান্য টুলস</h2>
+                <p class="text-lg text-gray-500 mt-2">ডিজাইন, প্রেজেন্টেশন ও অন্যান্য কাজের জন্য বিশেষ টুলস</p>
+                <div class="section-title-border"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Canva -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-palette text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Canva</h3>
+                        <p class="text-gray-600 mb-4">পোস্টার, প্রেজেন্টেশন, সার্টিফিকেট তৈরির সেরা প্ল্যাটফর্ম।</p>
+                    </div>
+                    <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+
+                <!-- Background Remover -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-eraser text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Background Remover</h3>
+                        <p class="text-gray-600 mb-4">যেকোনো ছবির ব্যাকগ্রাউন্ড এক ক্লিকে মুছে ফেলুন।</p>
+                    </div>
+                    <a href="https://www.remove.bg/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+                
+                <!-- Slidesgo -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-file-powerpoint text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Slidesgo</h3>
+                        <p class="text-gray-600 mb-4">আকর্ষণীয় এবং বিনামূল্যে প্রেজেন্টেশন টেমপ্লেট।</p>
+                    </div>
+                    <a href="https://slidesgo.com/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+
+                <!-- Kahoot! -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-question-circle text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Kahoot!</h3>
+                        <p class="text-gray-600 mb-4">ছাত্রছাত্রীদের জন্য মজার কুইজ ও ইন্টারেক্টিভ ক্লাস তৈরি করুন।</p>
+                    </div>
+                    <a href="https://kahoot.it/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Government & Educational Resources -->
+        <section>
+            <div class="text-center mb-10">
+                <h2 class="text-4xl font-bold text-gray-800">শিক্ষামূলক রিসোর্স</h2>
+                <p class="text-lg text-gray-500 mt-2">গুরুত্বপূর্ণ শিক্ষামূলক পোর্টাল ও রিসোর্সসমূহ</p>
+                <div class="section-title-border"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Shikkhok Batayon -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chalkboard-teacher text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">শিক্ষক বাতায়ন</h3>
+                        <p class="text-gray-600 mb-4">শিক্ষকদের জন্য বাংলাদেশের বৃহত্তম অনলাইন প্ল্যাটফর্ম।</p>
+                    </div>
+                    <a href="https://www.teachers.gov.bd/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+                
+                <!-- NCTB -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-book-open text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">NCTB পাঠ্যপুস্তক</h3>
+                        <p class="text-gray-600 mb-4">সকল শ্রেণির পাঠ্যপুস্তক ডাউনলোড করুন।</p>
+                    </div>
+                    <a href="http://www.nctb.gov.bd/site/page/d599c158-4a18-4e02-9554-73cf10631a5c/-" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        বই ডাউনলোড
+                    </a>
+                </div>
+
+                <!-- MuktoPaath -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-laptop-code text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">মুক্তপাঠ</h3>
+                        <p class="text-gray-600 mb-4">শিক্ষকদের জন্য অনলাইন কোর্স ও প্রশিক্ষণের প্ল্যাটফর্ম।</p>
+                    </div>
+                    <a href="https://muktopaath.gov.bd/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+
+                <!-- Khan Academy Bangla -->
+                <div class="tool-item bg-white rounded-lg shadow-sm p-6 text-center">
+                    <div class="flex-grow">
+                        <div class="icon-container flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-graduation-cap text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">খান একাডেমি</h3>
+                        <p class="text-gray-600 mb-4">গণিত ও বিজ্ঞানের উপরฟรี ভিডিও টিউটোরিয়াল।</p>
+                    </div>
+                    <a href="https://bn.khanacademy.org/" target="_blank" rel="noopener noreferrer" class="mt-auto inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-md transition-colors">
+                        সাইট ভিজিট করুন
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8">
+            <div class="text-center">
+                <p>&copy;সর্বস্বত্ব সংরক্ষিত ২০২৪ | ALPCG | Fahad Bin Mamun</p>
+                <p class="text-sm mt-1">এই পোর্টালটি শিক্ষকদের ডিজিটাল কাজে সহায়তা করার জন্য তৈরি।</p>
+                <div class="mt-4">
+                    <a href="https://www.facebook.com/okgs.computer.club/" target="_blank" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/channel/UCE-VL9Ap-kLeKuvM1D3mmYA" target="_blank" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                const preloader = document.getElementById('preloader');
+                if (preloader) {
+                    preloader.style.opacity = '0';
+                    preloader.style.visibility = 'hidden';
+                }
+            }, 1000); // Ensures the preloader is visible for at least 1 second
+        };
+    </script>
+
+</body>
+</html>
